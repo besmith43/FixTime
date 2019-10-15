@@ -109,9 +109,9 @@ namespace FixTime
                     		sw.WriteLine(content);
                 	}
 		        }
-                catch
+                catch(Exception e)
                 {
-                    Console.WriteLine($"Couldn't write to path: { filename }");
+                    Console.WriteLine($"Couldn't write to path: { filename }{ Environment.NewLine }{ e }");
                     return false;
                 }
 
